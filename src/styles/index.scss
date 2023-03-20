@@ -5,3 +5,80 @@
 
 @import 'variables';
 @import 'scaffolding';
+
+#root {
+  width: 100%;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.body {
+  height: calc(100vh - 60px - 60px);
+  margin: auto;
+}
+
+.footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: $page-width;
+  margin: auto;
+  padding: 0 1em 0 1em;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
+}
+
+.col {
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+  padding: 16px 32px;
+  background: #b5b8e4;
+  box-shadow: inset 4px 6px 6px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+}
+
+img {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 6em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.max-width-unset {
+  max-width: unset;
+}
